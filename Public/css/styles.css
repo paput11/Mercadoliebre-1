@@ -2,53 +2,63 @@
 
 body { 
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926
-    };
+    background-color: #EAC926;
+}
 
-   
-    h2 { font-size: 24px;
+h2 { font-size: 24px;}
 
-    }
-    .precios {font-size: 18px;}
-    .descuentos {font-size: 16px;}
-    .descripciones {font-size: 16px;}
-    .cuerpo {font-size: 12px;}
-    .burger-menu { 
-        color: white;
-        width: 20px;
-        height: 20px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        background-color: #1259c3;;
-        box-sizing: border-box;
-        border-radius: 3px;
-        margin-left: 50%;
-            
-    }
-    footer {text-align: center;}
-    main { width: 90vw;
-     background-color:#ebebeb;}
+.precios {font-size: 18px;}
 
-     section {
-        justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-    }
+.descuentos {font-size: 16px;}
+
+.descripciones {font-size: 16px;}
+
+.cuerpo {font-size: 12px;}
+
+.burger-menu { 
+    color: white;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #1259c3;;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: 50%;
+}
+
+footer {text-align: center;}
+
+main { 
+    width: 90vw;
+    background-color:#ebebeb;
+}
+
+section {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.Caja-articulo {
+    position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+#carrito_compras {
+    position: absolute;
+    right: 0px;
+
+}
         
-        .Caja-articulo {
-            border: solid #ebebeb 1px ;
-            background-color: #ffffff;
-            box-sizing: border-box;
-                }
-
-        
-        article {
-        width: 90%;  
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        box-sizing: border-box;
-        
-    }
+article {
+    width: 90%;  
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    text-align: center;
+    box-sizing: border-box;
+}
