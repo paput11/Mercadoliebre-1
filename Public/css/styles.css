@@ -11,7 +11,17 @@ h2 { font-size: 24px;}
 
 .descuentos {font-size: 16px;}
 
-.descripciones {font-size: 16px;}
+.descripciones {
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: left;
+
+}
 
 .cuerpo {font-size: 12px;}
 
@@ -41,18 +51,6 @@ section {
     flex-direction: column;
     box-sizing: border-box;
 }
-
-.Caja-articulo {
-    position: relative;
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
-
-#carrito_compras {
-    position: absolute;
-    right: 0px;
-
-}
         
 article {
     width: 90%;  
@@ -61,4 +59,46 @@ article {
     margin-left: 5%;
     text-align: center;
     box-sizing: border-box;
+}
+
+.Caja-articulo {
+    position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.carrito_compras {
+    color: rgb(0, 150, 0,.9) ;
+    position: absolute;
+    right: 0%;
+    top: -20px;
+    padding: 5px;
+    border-width: 2px;
+    border-color:  rgb(0, 150, 0,.9);
+    border-style: solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.precios{
+    width: 30%; 
+    box-sizing: border-box;
+    text-align: left 10px;
+}
+
+.descuentos{
+    width: 70%;
+    box-sizing: border-box;
+    text-align: left;
+    color: rgb(0, 150, 0, .9);
+    font-size: 1.2em;
+    font-weight: 550;   
+}
+
+.precios_descuentos{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;   
 }
