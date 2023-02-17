@@ -26,7 +26,6 @@ body {
    
 h2 { 
     font-size: 24px;
-    
 }
 
 .precios {font-size: 18px;}
@@ -66,13 +65,7 @@ main {
     background-color:#ebebeb;
 }
 
-section {
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-}
-        
+/*propiedades para aritculos en comun*/        
 article {
     width: 90%;  
     margin-top: 5px;
@@ -124,3 +117,34 @@ article {
     align-items: center;   
 }
 
+section {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*queries tablet*/
+
+@media (min-width: 460px){
+    section {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+/*queries tablet*/
+@media (min-width: 768px){
+    section {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
