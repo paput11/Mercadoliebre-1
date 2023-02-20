@@ -21,7 +21,8 @@ header {
 
 body { 
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926
+    background-color: #EAC926;
+    margin: 0px;
     };
    
 h2 { 
@@ -58,24 +59,38 @@ h2 {
     border-radius: 3px;
 }
 
-footer {text-align: center;
-    background-color: #ffffff;
-    width: 100%;
-    max-width: ;}
+
 
 main { 
-    width: 90vw;
     background-color:#ebebeb;
+    margin: 0px;
+}
+section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
 }
 
+.articulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
 /*propiedades para aritculos en comun*/        
 article {
     width: 90%;  
     margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5%;
+    margin-bottom: 1px;
     text-align: center;
     box-sizing: border-box;
+    max-width: 414px;
 }
 
 .Caja-articulo {
@@ -120,30 +135,49 @@ article {
     align-items: center;   
 }
 
-section {
-    justify-content: space-around;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-align: center;
-}
+footer {text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: ;}
+
 
 /*queries tablet*/
 
-@media (min-width: 460px){
-    article {
-   max-width: 460px;
-   
+@media (max-width: 460px){
+    .lista_hipervinculo{
+        display: none;
     }
 }
 
+@media (min-width: 460px) and (max-width: 768px){
+   .articulos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+    .lista_hipervinculo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .lista_hipervinculo > *{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 /*queries tablet*/
 @media (min-width: 768px){
-    section {
+    .articulos {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        align-items: center;
         justify-content: space-around;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        text-align: center;
     }
 }
