@@ -1,0 +1,44 @@
+@media (max-width: 460px){
+  .lista_hipervinculo {
+    display: none;
+  }
+
+  .burger-menu { 
+    color: white;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #1259c3;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+
+  .menu_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .articulos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+  }
+}
+/* fin de condicion */
+

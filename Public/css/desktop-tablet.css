@@ -1,0 +1,40 @@
+/* Estilos post mobile para arriba */
+@media (min-width: 460px) {
+
+  .menu_container {
+    display: none;
+  }
+
+  .lista_hipervinculo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .lista_hipervinculo ul li {
+    display: inline;
+  }
+
+  .producto {
+    width: 100%;
+  }
+  /* Estilos PC */
+  @media (min-width: 768px){
+    .articulos {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  /* Estilos tablet */
+  @media (max-width: 768px) {
+    .articulos {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+
+}

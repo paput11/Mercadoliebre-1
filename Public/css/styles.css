@@ -1,32 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./reset.css";
 
-/*header*/
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+@import "./mobile.css";
 
-.logo_searchbar_lupa{
-    width: 100%;
-    align-items: left;
-    margin-left: 10%;
-}
+@import "./desktop-tablet.css";
 
-.lista_hipervinculo{
-    align-items: left;
-    width: 100%;
-}
-
-body { 
+html, body { 
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
     margin: 0px;
-    };
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+    padding: 30px 15px;
+}
+.logo_searchbar_lupa {
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+}
+
+.busqueda input {
+    padding: 10px 25px 10px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.busqueda {
+    position: relative;
+}
+
+.busqueda > i {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.manito_compra_cuotas {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
    
-h2 { 
+.titulo { 
     font-size: 24px;
+    padding: 1rem;
+    text-align: left;
 }
 
 .precios {font-size: 18px;}
@@ -47,51 +69,17 @@ h2 {
 
 .cuerpo {font-size: 12px;}
 
-.burger-menu { 
-    color: white;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background-color: #1259c3;;
-    box-sizing: border-box;
-    border-radius: 3px;
-}
-
 
 
 main { 
     background-color:#ebebeb;
     margin: 0px;
 }
-section {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0px;
-    width: 100%;
-}
 
-.articulos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 
-}
+
+
 /*propiedades para aritculos en comun*/        
-article {
-    width: 90%;  
-    margin-top: 5px;
-    margin-bottom: 1px;
-    text-align: center;
-    box-sizing: border-box;
-    max-width: 414px;
-}
 
 .Caja-articulo {
     position: relative;
@@ -113,18 +101,19 @@ article {
 }
 
 .precios{
-    width: 30%; 
+
     box-sizing: border-box;
-    text-align: left 10px;
+    padding-left: 10px;
 }
 
 .descuentos{
-    width: 70%;
+
     box-sizing: border-box;
     text-align: left;
     color: rgb(0, 150, 0, .9);
-    font-size: 1.2em;
-    font-weight: 550;   
+    font-size: 1.2rem;
+    font-weight: 550;
+    padding-left: 5px;   
 }
 
 .precios_descuentos{
@@ -135,49 +124,9 @@ article {
     align-items: center;   
 }
 
-footer {text-align: center;
+footer {
+    text-align: center;
     background-color: #ffffff;
     width: 100%;
-    max-width: ;}
-
-
-/*queries tablet*/
-
-@media (max-width: 460px){
-    .lista_hipervinculo{
-        display: none;
-    }
 }
 
-@media (min-width: 460px) and (max-width: 768px){
-   .articulos {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
-
-    .lista_hipervinculo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .lista_hipervinculo > *{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-/*queries tablet*/
-@media (min-width: 768px){
-    .articulos {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        align-items: center;
-        justify-content: space-around;
-    }
-}
