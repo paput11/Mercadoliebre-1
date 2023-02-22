@@ -16,27 +16,29 @@
 
   .producto {
     width: 100%;
-  }
-  /* Estilos PC */
-  @media (min-width: 768px){
-    .articulos {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      gap: 1rem;
-      padding: 1rem;
-      justify-content: space-around;
-    }
+    box-sizing: border-box;
+    padding: 1rem;
+
   }
 
-  /* Estilos tablet */
-  @media (max-width: 768px) {
-    .articulos {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 1rem;
-      padding: 1rem;
-      justify-content: space-around;
-    }
+/* Estilos PC */
+@media (min-width: 768px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
   }
 
+
+/* Estilos tablet */
+@media (max-width: 768px) {
+  .articulos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around; 
+    padding: 0 1rem; 
+  }
+} 
 }
