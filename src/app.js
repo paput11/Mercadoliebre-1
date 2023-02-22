@@ -4,10 +4,10 @@ const path = require ("path");
 
 const app = express ();
 
-
+const port = process.env.PORT || 3000;
 
 app.listen(3000,()=> (
-    console.log("Servidor escuchando en el puerto 3000")
+    console.log("Servidor escuchando en el puerto" + port)
 ));
 app.use(express.static("public"));
     
