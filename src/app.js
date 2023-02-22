@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.listen(3000,()=> (
     console.log("Servidor escuchando en el puerto" + port)
 ));
-app.use(express.static("public"));
+app.use(express.static("../public"));
     
 app.get ("/", (req,res) => {
     res.sendFile(path.join(__dirname, "./views/home.html"));
