@@ -1,6 +1,21 @@
 /* Estilos post mobile para arriba */
 @media (min-width: 460px) {
 
+  .logo_searchbar_lupa > img{
+    width: 30%;
+  }
+
+  .busqueda{
+    width: 30%;
+  }
+
+  .busqueda input {
+    width: 100%;
+  }
+
+  .manito_compra_cuotas{
+    width: 30%;
+  }
   .menu_container {
     display: none;
   }
